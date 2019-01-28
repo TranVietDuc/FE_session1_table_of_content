@@ -1,0 +1,49 @@
+#main {
+    position: absolute;
+    left: 5%;
+    width: 85%;
+    height: 96%;
+    margin: 5px;
+    font-family: FreeMono;
+    font-size: 30px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-color: burlywood;
+    border: 1px;
+    border: solid;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 2fr 8fr ;
+    grid-template-areas:
+           "header header"
+           "book_content table_of_content ";
+}
+.header{
+    position: fixed;
+    grid-area: header;
+    background-color: darkblue;
+    border: black;
+    border: 1px;
+    border: solid;
+}
+#book_content{
+    grid-area: book_content;
+    background-color: ghostwhite;
+    border: black;
+    border: 1px;
+    border: solid;
+}
+#table_of_content{
+    grid-area: table_of_content ;
+    background-color: burlywood;
+    border: black;
+    border: 1px;
+    border: solid;
+    font-family: FreeSerif;
+    font-style: oblique;
+    font-size: 15px;
+}
+.chapter{
+    display: block;
+    text-align: left;
+}
